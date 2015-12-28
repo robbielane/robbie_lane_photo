@@ -10,6 +10,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'paperclip'
 gem 'aws-sdk', '< 2.0'
 gem 'figaro'
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'pry'
@@ -19,4 +20,3 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-
