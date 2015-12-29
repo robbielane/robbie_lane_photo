@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  before_action :robbie?
+
   def new
   end
 
@@ -17,5 +19,9 @@ class SessionsController < ApplicationController
   def destroy
     session.clear
     redirect_to root_path
+  end
+
+  def robbie?
+    redirect_to admin_path if current_user
   end
 end
