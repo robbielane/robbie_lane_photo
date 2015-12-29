@@ -1,12 +1,14 @@
 <div class="waypoint-nav space"></div>
 <%= render partial: 'shared/nav' %>
-<h1> Add Picture to <%= @gallery.name %> Gallery </h1>
-<%= form_for @picture, multipart: true, url: pictures_path(gallery: @gallery.id) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :description %>
-  <%= f.text_area :description %>
-  <%= f.label :image %>
-  <%= f.file_field :image %>
-  <%= f.submit "submit" %>
-<% end %>
+<div class="new-picture">
+  <h1> Add Picture to <%= @gallery.name %> Gallery </h1>
+  <%= form_for @picture, multipart: true, url: pictures_path(gallery: @gallery.id) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+    <%= f.submit "submit" %>
+  <% end %>
+</div>
