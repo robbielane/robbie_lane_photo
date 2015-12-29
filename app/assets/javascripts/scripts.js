@@ -23,5 +23,10 @@ $(document).ready(function() {
       $links.toggleClass('show');
 
     });
-    
+
+    new AnimOnScroll( document.getElementById( 'gal-grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+      } );
 });
