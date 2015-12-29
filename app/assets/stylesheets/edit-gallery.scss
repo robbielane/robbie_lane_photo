@@ -1,0 +1,76 @@
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  .gallery-details-edit {
+    margin:15px;
+    padding: 15px;
+    border: 1px solid #666;
+    form {
+      font-size: 20px;
+      input {
+        font-size: 20px;
+        border: 2px solid #ccc;
+        margin-bottom: 15px 0;
+        padding: 4px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .gallery-edit-pictures {
+    margin:15px;
+    padding: 15px;
+    border: 1px solid #666;
+    background: #e3f2fd;
+  }
+
+  .gallery-edit-pictures
+  .gallery-edit-picture {
+    margin:15px;
+    padding: 15px;
+    border: 1px solid #000;
+    min-height: 330px;
+    background: #fff;
+    img {
+      width: 50%;
+    }
+
+    .edit-form {
+      float: left;
+      width:50%;
+      display: block;
+      form {
+        label {
+          margin: 2px;
+        }
+
+        input {
+          font-size: 20px;
+          border: 2px solid #ccc;
+          margin-bottom: 15px;
+          padding: 4px;
+          width: 90%;
+          display: block;
+        }
+
+        textarea {
+          display: block;
+          width: 90%;
+          height: 8rem;
+          margin-bottom: 15px;
+        }
+
+        input[type=checkbox] {
+          display: inline;
+          width: auto;
+        }
+
+        input[type=submit] {
+          border: 2px solid #666;
+        }
+      }
+    }
+  }
+
+}

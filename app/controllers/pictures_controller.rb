@@ -1,4 +1,6 @@
 class PicturesController < ApplicationController
+  before_action :authenticate!, only: [:new, :create]
+
   def show
     @picture = Picture.find(params[:id])
   end

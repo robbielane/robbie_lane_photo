@@ -1,0 +1,28 @@
+.admin-galleries {
+  margin: 0 auto;
+  table {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid #ccc;
+      th {
+        text-align: left;
+        font-weight: bold;
+      }
+      td img,
+      td p {
+        vertical-align: middle;
+      }
+
+      th, td {
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.picture-icon {
+  width: 100px;
+}
