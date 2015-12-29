@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: 'home#index'
-  resources :pictures
+  resources :pictures, except: [:index]
   resources :galleries
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'

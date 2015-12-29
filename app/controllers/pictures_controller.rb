@@ -1,21 +1,23 @@
 class PicturesController < ApplicationController
-  before_action :authenticate!, only: [:new, :create, :edit, :update]
+  before_action :authenticate!, only: [:new, :create, :edit, :update, :destroy]
 
   def show
     @picture = Picture.find(params[:id])
   end
 
   def new
-    @picture = Picture.new
+    @gallery = Gallery.find(params[:gallery])
+    @picture = @gallery.pictures.new
   end
 
   def create
-    @picture = Picture.new(picture_params)
+    @gallery = Gallery.find(params[:gallery])
+    @picture = @gallery.pictures.new(picture_params)
     if @picture.save
-      # Flash
-      redirect_to @picture
+      flash[:notice] = "Successfully added #{@picture.name} to #{@gallery.name}"
+      redirect_to edit_gallery_path(@gallery)
     else
-      # Flash :/
+      flash.now[:error] = "Something went wrong :/"
       render :new
     end
   end
@@ -29,6 +31,12 @@ class PicturesController < ApplicationController
       flash.now[:error] = "Something went wrong :/"
       render :edit
     end
+  end
+
+  def destroy
+    @picture = Picture.find(params[:id])
+    @picture.destroy
+    redirect_to :back
   end
 
   private

@@ -1,4 +1,7 @@
-<%= form_for @picture, multipart: true do |f| %>
+<div class="waypoint-nav space"></div>
+<%= render partial: 'shared/nav' %>
+<h1> Add Picture to <%= @gallery.name %> Gallery </h1>
+<%= form_for @picture, multipart: true, url: pictures_path(gallery: @gallery.id) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
   <%= f.label :description %>
