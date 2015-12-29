@@ -18,18 +18,95 @@ class Seed
   end
 
   def create_galleries
-    h = Gallery.create!(name: 'Haines', location: 'Haines, Alaska')
-    puts "Created Gallery 1: Haines"
-    Dir.glob('/Users/robbielane/code/robbie_lane_photo_seeds/Haines/*.jpg') do |image|
-      h.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+    g = Gallery.create!(name: 'Mormon Row', location: 'Grand Teton National Park, Wyoming')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/MormonRow/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Haines', location: 'Haines, Alaska')
+    puts "Created Gallery #{g.id}: Haines"
+    Dir.glob('../robbie_lane_photo_seeds/Haines/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
       puts "Added picture (#{image.split('/').last[0..-5]}) to Haines"
     end
 
-    s = Gallery.create!(name: 'Sunflowers', location: 'Denver, Colorado')
-    puts "Created Gallery 2: Sunflowers"
-    Dir.glob('/Users/robbielane/code/robbie_lane_photo_seeds/Sunflowers/*.jpg') do |image|
-      s.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+    g = Gallery.create!(name: 'Ice Cave', location: 'Juneau, Alaska')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/IceCave/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Sunflowers', location: 'Denver, Colorado')
+    puts "Created Gallery #{g.id}: Sunflowers"
+    Dir.glob('../robbie_lane_photo_seeds/Sunflowers/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
       puts "Added picture (#{image.split('/').last[0..-5]}) to Sunflowers"
+    end
+
+    g = Gallery.create!(name: 'Blue Lagoon', location: 'Grindavík, Iceland')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/BlueLagoon/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Mendenhall Glacier', location: 'Juneau, Alaska')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/Mendenhall/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Sandy Beach', location: 'Juneau, Alaska')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/SandyBeach/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Treadwell Mines', location: 'Juneau, Alaska')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/Treadwell/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Canyonlands', location: 'Utah')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/Canyonlands/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Denver', location: 'Colorado')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/Denver/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Iceland', location: 'Iceland')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/Iceland/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Juneau', location: 'Alaska')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/Juneau/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
+    end
+
+    g = Gallery.create!(name: 'Madison', location: 'Wisconsin')
+    puts "Created Gallery #{g.id}: #{g.name}"
+    Dir.glob('../robbie_lane_photo_seeds/Madison/*.jpg') do |image|
+      g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
+      puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
     end
   end
 end

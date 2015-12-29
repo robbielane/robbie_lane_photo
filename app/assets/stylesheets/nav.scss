@@ -25,6 +25,32 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.nav-logo {
+  height: 35px;
+  float: left;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
 .container {
   max-width: 1920px;
   width: 90%;
@@ -34,10 +60,11 @@ nav a:hover {
 
 .primary-navigation {
   bottom: 0;
-  padding: 5px 0;
+  padding: 5px;
   border-bottom: 1px solid #aaa;
   position: absolute;
   width: 100%;
+  float: right;
 }
 
 .primary-navigation.fixed {
@@ -50,13 +77,11 @@ nav a:hover {
   z-index: 50;
 }
 
-.primary-navigation .mark {
-  float: left;
-}
-
 .primary-navigation .links {
   float: right;
   margin-right:0;
+  margin-top: -10px;
+  margin-bottom: 15px;
 }
 
 .primary-navigation .links li {
@@ -85,6 +110,15 @@ nav a:hover {
 
 .fixed {
 	margin:0 auto;
+}
+
+.primary-navigation .hamburger {
+  display: none;
+}
+
+#toggle-logo {
+  margin-top: 15px;
+  margin-bottom: -30px;
 }
 
 @media screen and (max-width:1025px) {
@@ -171,7 +205,7 @@ nav a:hover {
   }
 
   .primary-navigation .links li:after {
-    content: "---";
+    content: "-------";
     color: #FC5253;
     display: block;
     margin: 15px 0 0 0;

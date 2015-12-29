@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root to: 'home#index'
-  resources :pictures
+  resources :pictures, only: [:show, :new, :create]
+  resources :galleries
 end

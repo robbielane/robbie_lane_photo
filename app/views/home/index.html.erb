@@ -6,7 +6,7 @@
 	</figure>
 	<nav id="primary-navigation" class="primary-navigation ">
 		<div class="container">
-      <a href="/" id="toggle-logo" class="visuallyhidden"><img src="img/navlogo.png" height="35"></a>
+      <a href="/" id="toggle-logo" class="visuallyhidden"><%= image_tag("navlogo.png", class: 'nav-logo') %></a>
       <a href="#" id="toggle-menu" class="hamburger">
         <span class="bar bar-top"></span>
         <span class="bar bar-middle"></span>
@@ -21,3 +21,19 @@
     </div>
 	</nav>
 </aside>
+<section class="waypoint-nav gallery-container">
+	<div class="grid">
+		<% @galleries.each do |gallery| %>
+
+		<figure class="grid-hover">
+			<%= link_to image_tag(gallery.pictures.first.image.url(:h_thumb)), "#" %>
+			<figcaption>
+				<h2 class="gallery-name"><%= gallery.name %></h2>
+				<p><%= gallery.location %></p>
+				<!-- <a href="#">View more</a> -->
+			</figcaption>
+		</figure>
+
+		<% end %>
+	</div>
+</section>
