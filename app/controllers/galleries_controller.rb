@@ -14,7 +14,20 @@ class GalleriesController < ApplicationController
 
 
   def update
-    
+    @gallery = Gallery.find(params[:id])
+    if @gallery.update(gallery_params)
+      flash[:notice] = "Successfully updated #{@gallery.name}"
+      redirect_to admin_path
+    else
+      flash.now[:error] = "Something went wrong :/"
+      render :edit
+    end
+  end
+
+  private
+
+  def gallery_params
+    params.require(:gallery).permit(:name, :location)
   end
 
 end
