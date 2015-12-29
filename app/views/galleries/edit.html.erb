@@ -23,8 +23,9 @@
         <%= f.text_area :description %>
         <%= f.check_box :print  %>
         <%= f.label :print %>
-        <%= f.submit %>
+        <%= f.submit class: 'blue' %>
         <% end %>
+        <%= button_to "Delete", picture_path(picture), method: :delete, class: 'red' %>
       </div>
     </div>
     <% end %>
