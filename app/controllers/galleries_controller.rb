@@ -1,20 +1,18 @@
 class GalleriesController < ApplicationController
-  before_action :authenticate!, only: [:new, :create, :edit, :update]
+  before_action :authenticate!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :find_gallery, only: [:show, :edit, :update, :destroy]
   def index
     @galleries = Gallery.all
   end
 
   def show
-    @gallery = Gallery.find(params[:id])
   end
 
   def edit
-    @gallery = Gallery.find(params[:id])
   end
 
 
   def update
-    @gallery = Gallery.find(params[:id])
     if @gallery.update(gallery_params)
       flash[:notice] = "Successfully updated #{@gallery.name}"
       redirect_to admin_path
@@ -24,10 +22,20 @@ class GalleriesController < ApplicationController
     end
   end
 
+  def destroy
+    @gallery.pictures.each { |picture| picture.destroy }
+    @gallery.destroy
+    redirect_to :back
+  end
+
   private
 
   def gallery_params
     params.require(:gallery).permit(:name, :location)
+  end
+
+  def find_gallery
+    @gallery = Gallery.find(params[:id])
   end
 
 end

@@ -8,6 +8,7 @@
         <th>Name</th>
         <th>Pictures</th>
         <th>Edit</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -18,6 +19,7 @@
         <td> <%= gallery.name %> </td>
         <td> <%= gallery.pictures.count %> </td>
         <td> <%= link_to "Edit", edit_gallery_path(gallery) %></td>
+        <td> <%= link_to "Delete", gallery_path(gallery), method: :delete %></td>
       </tr>
       <% end %>
 
