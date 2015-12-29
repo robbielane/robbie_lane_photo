@@ -1,0 +1,12 @@
+<div class="waypoint-nav space"></div>
+<%= render partial: 'shared/nav' %>
+
+<div class="login jk">
+  <%= form_for @gallery do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+    <%= f.submit %>
+  <% end %>
+</div>

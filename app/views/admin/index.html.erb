@@ -1,5 +1,11 @@
 <div class="waypoint-nav space"></div>
 <%= render partial: 'shared/nav' %>
+
+<div class="admin-gallery-tools">
+  <%= button_to "Add New Gallery", new_gallery_path, class: 'btn', method: :get %>
+
+</div>
+
 <div class="admin-galleries">
   <table>
     <thead>
@@ -15,7 +21,7 @@
 
       <% @galleries.each do |gallery| %>
       <tr>
-        <td> <%= image_tag gallery.pictures.first.image.url(:thumb), class: 'picture-icon' %> </td>
+        <td> <%= image_tag gallery_cover(gallery), class: 'picture-icon' %> </td>
         <td> <%= gallery.name %> </td>
         <td> <%= gallery.pictures.count %> </td>
         <td> <%= link_to "Edit", edit_gallery_path(gallery) %></td>

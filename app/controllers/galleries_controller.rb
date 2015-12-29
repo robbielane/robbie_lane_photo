@@ -1,8 +1,24 @@
 class GalleriesController < ApplicationController
   before_action :authenticate!, only: [:new, :create, :edit, :update, :destroy]
   before_action :find_gallery, only: [:show, :edit, :update, :destroy]
+
   def index
     @galleries = Gallery.all
+  end
+
+  def new
+    @gallery = Gallery.new
+  end
+
+  def create
+    @gallery = Gallery.new(gallery_params)
+    if @gallery.save
+      flash[:notice] = "Successfully created #{@gallery.name}"
+      redirect_to admin_path
+    else
+      flash.now[:error] = "Something went wron :/"
+      render :new
+    end
   end
 
   def show
