@@ -11,7 +11,7 @@
     <% end %>
   </div>
   <div class="gallery-edit-pictures">
-    <h1> <%= @gallery.name %> - Pictures</h1>
+    <h1>Pictures</h1>
     <% @gallery.pictures.each do |picture| %>
     <div class="gallery-edit-picture">
       <%= image_tag picture.image.url(:thumb) %>
