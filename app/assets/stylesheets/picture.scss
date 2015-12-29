@@ -1,8 +1,15 @@
 .picture {
   width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
+
+  h1 {
+    font-size: 1.3em;
+    font-weight: 800;
+    color: #666;
+    margin-bottom: 10px;
+  }
 }
 .center {
   display: block;
-  margin: 40px auto;
+  margin: 0 auto;
 }
