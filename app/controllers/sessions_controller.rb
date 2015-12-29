@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  before_action :robbie?
+  before_action :robbie?, only: [:new]
 
   def new
   end
