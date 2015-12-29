@@ -77,7 +77,8 @@
 
 .grid figure h2 {
 	word-spacing: -0.15em;
-  font-weight: 400;
+  font-weight: 800;
+	color: #fff;
 }
 
 .grid figure h2 span {
@@ -121,11 +122,13 @@ figure.grid-hover figcaption > div {
 
 figure.grid-hover h2,
 figure.grid-hover p {
-	-webkit-transform: translate3d(0,40px,0);
-	transform: translate3d(0,40px,0);
+	-webkit-transform: translate3d(0,80px,0);
+	transform: translate3d(0,80px,0);
 }
 
 figure.grid-hover h2 {
+	color: rgba(255,255,255,1);
+	opacity: 0;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
@@ -138,6 +141,7 @@ figure.grid-hover p {
 }
 
 figure.grid-hover:hover img,
+figure.grid-hover:hover h2,
 figure.grid-hover:hover p {
 	opacity: 1;
 }

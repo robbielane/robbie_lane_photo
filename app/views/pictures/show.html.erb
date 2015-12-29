@@ -1,3 +1,13 @@
-<%= @picture.name %><br>
-<%= @picture.description %><br>
-<%= image_tag @picture.image.url(:full_size) %><br>
+<div class="waypoint-nav space"></div>
+<%= render partial: 'shared/nav' %>
+<div class="picture-grid">
+  <div class="picture">
+    <figure>
+      <%= image_tag @picture.image.url(:full_size) %>
+    </figure>
+  </div>
+  <div class="description">
+    <%= @picture.name %><br>
+    <%= @picture.description %>
+  </div>
+</div>

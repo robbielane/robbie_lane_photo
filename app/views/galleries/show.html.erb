@@ -5,14 +5,20 @@
     <h1> <%= @gallery.name %></h1>
     <h4> <%= @gallery.location %> </h4>
   </div>
-  <div class="gal-grid">
+  <ul class="gal-grid move-up" id="gal-grid">
 
     <% @gallery.pictures.each do |picture| %>
-    <figure>
-      <%= image_tag picture.image.url(:full_size) %>
-    </figure>
+      <li><%= link_to image_tag(picture.image.url(:full_size)), picture_path(picture) %></li>
     <% end %>
 
-  </div>
+  </ul>
+
+  <script type="text/javascript">
+  new AnimOnScroll( document.getElementById( 'gal-grid' ), {
+      minDuration : 0.4,
+      maxDuration : 0.7,
+      viewportFactor : 0.2
+    } );
+  </script>
 
 </div>

@@ -25,7 +25,7 @@ class Seed
       puts "Added picture (#{image.split('/').last[0..-5]}) to #{g.name}"
     end
 
-    g = Gallery.create!(name: 'Haines', location: 'Haines, Alaska')
+    g = Gallery.create!(name: 'Haines', location: 'Alaska')
     puts "Created Gallery #{g.id}: Haines"
     Dir.glob('../robbie_lane_photo_seeds/Haines/*.jpg') do |image|
       g.pictures.create!(name: image.split('/').last[0..-5], print: false, image: File.open(image))
