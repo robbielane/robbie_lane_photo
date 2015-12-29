@@ -1,0 +1,18 @@
+.gal {
+  width: 800px;
+  margin: 0 auto;
+  .title {
+    margin: 25px 0;
+  }
+}
+
+.gal-grid {
+  figure {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

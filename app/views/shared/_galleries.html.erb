@@ -1,0 +1,15 @@
+<div class="grid">
+  <% @galleries.each do |gallery| %>
+
+  <figure class="grid-hover">
+    <%= image_tag(gallery.pictures.first.image.url(:h_thumb)) %>
+    <figcaption>
+      <h2 class="gallery-name"><%= gallery.name %></h2>
+      <p><%= gallery.location %></p>
+      <%= link_to '', gallery_path(gallery) %>
+      <!-- <a href="#">View more</a> -->
+    </figcaption>
+  </figure>
+
+  <% end %>
+</div>

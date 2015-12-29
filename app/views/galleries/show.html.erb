@@ -1,0 +1,18 @@
+<div class="waypoint-nav space"></div>
+<%= render partial: 'shared/nav' %>
+<div class="gal">
+  <div class="title">
+    <h1> <%= @gallery.name %></h1>
+    <h4> <%= @gallery.location %> </h4>
+  </div>
+  <div class="gal-grid">
+
+    <% @gallery.pictures.each do |picture| %>
+    <figure>
+      <%= image_tag picture.image.url(:full_size) %>
+    </figure>
+    <% end %>
+
+  </div>
+
+</div>

@@ -1,19 +1,14 @@
 nav ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
 }
 
 nav a:hover,
@@ -100,7 +95,7 @@ nav a:hover {
 }
 
 .primary-navigation.fixed .links li a {
-  color: #33384A;
+  color: #666;
 }
 
 .primary-navigation.fixed .links li a:hover,
