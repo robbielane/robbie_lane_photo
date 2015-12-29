@@ -21,3 +21,15 @@ body {
 .space {
   height: 90px;
 }
+
+.flash_error {
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  background-color: red;
+  text-align: center;
+  font-weight: 800;
+  padding: 5px;
+  color: #fff;
+  opacity: 0.6;
+}

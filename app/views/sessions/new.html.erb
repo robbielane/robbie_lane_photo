@@ -1,7 +1,11 @@
-<%= form_for :session, url: login_path do |f| %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.submit %>
-<% end %>
+<div class="waypoint-nav space"></div>
+<%= render partial: 'shared/nav' %>
+<div class="login">
+  <%= form_for :session, url: login_path do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username, autofocus: true %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.submit "Login" %>
+  <% end %>
+</div>
