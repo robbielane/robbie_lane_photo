@@ -2,7 +2,7 @@
   <% @galleries.each do |gallery| %>
 
   <figure class="grid-hover">
-    <%= image_tag(gallery_cover(gallery)) %>
+    <%= image_tag(gallery_cover_h(gallery)) %>
     <figcaption>
       <h2 class="gallery-name"><%= gallery.name %></h2>
       <p><%= gallery.location %></p>
