@@ -1,0 +1,16 @@
+.prints-container {
+  margin: 40px auto;
+  max-width: 1530px;
+
+  display: block;
+
+  figure {
+    max-width: 500px;
+    display: inline-block;
+    padding: 5px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

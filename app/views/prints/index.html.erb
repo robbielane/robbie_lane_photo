@@ -1,6 +1,10 @@
 <div class="waypoint-nav space"></div>
 <%= render partial: 'shared/nav' %>
 
-<% @prints.each do |print| %>
-  <%= image_tag print.image.url(:thumb) %>
-<% end %>
+<div class="prints-container">
+  <% @prints.each do |print| %>
+  <figure>
+    <%= link_to image_tag(print.image.url(:thumb)), print_path(print) %>
+  </figure>
+  <% end %>
+</div>
