@@ -14,8 +14,12 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :galleries, only: [:index, :show]
-      get '/prints,' to: 'prints#index'
+      get '/prints', to: 'prints#index'
       get '/recent', to: 'recent#index'
     end
   end
+
+
+
+  match '*any' => 'application#options', :via => [:options]
 end

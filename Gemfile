@@ -11,6 +11,7 @@ gem 'paperclip'
 gem 'aws-sdk', '< 2.0'
 gem 'figaro'
 gem 'bcrypt', '~> 3.1.7'
+gem 'responders'
 
 group :development, :test do
   gem 'pry'

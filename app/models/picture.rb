@@ -1,4 +1,5 @@
 class Picture < ActiveRecord::Base
+  include Rails.application.routes.url_helpers
   belongs_to :gallery
 
   has_attached_file :image, styles: {
@@ -11,4 +12,16 @@ class Picture < ActiveRecord::Base
 
   default_scope { order('created_at ASC') }
   scope :prints, -> { where(print: true) }
+
+  def image_url
+    self.image.url(:full_size)
+  end
+
+  def h_thumb_url
+    self.image.url(:h_thumb)
+  end
+
+  def picture_uri
+    picture_path(self)
+  end
 end
