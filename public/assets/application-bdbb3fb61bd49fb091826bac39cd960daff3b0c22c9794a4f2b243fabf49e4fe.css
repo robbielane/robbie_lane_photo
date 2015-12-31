@@ -1,0 +1,1004 @@
+/* line 1, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.admin-gallery-tools {
+  margin: 40px auto;
+  padding: 15px;
+  display: block;
+  border: 1px solid #ccc;
+  max-width: 1000px;
+  width: 100%;
+}
+/* line 9, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.admin-gallery-tools .btn {
+  border: 3px solid #666;
+  font-family: inherit;
+  font-size: inherit;
+  color: #666;
+  background: none;
+  cursor: pointer;
+  padding: 15px 60px;
+  display: inline-block;
+  margin: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 28, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.admin-gallery-tools .btn:hover {
+  color: #fff;
+  background-color: #666;
+  border: 3px solid #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 38, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.admin-galleries {
+  margin: 0 auto;
+}
+/* line 40, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.admin-galleries table {
+  margin: 30px auto;
+  max-width: 1000px;
+  width: 100%;
+}
+/* line 45, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.admin-galleries table tr {
+  border-bottom: 1px solid #ccc;
+}
+/* line 47, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.admin-galleries table tr th {
+  text-align: left;
+  font-weight: bold;
+}
+/* line 51, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.admin-galleries table tr td img,
+.admin-galleries table tr td p {
+  vertical-align: middle;
+}
+/* line 56, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.admin-galleries table tr th, .admin-galleries table tr td {
+  padding: 15px;
+}
+
+/* line 63, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/admin.scss */
+.picture-icon {
+  width: 100px;
+}
+/* line 1, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 40px auto;
+}
+/* line 6, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-details-edit {
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #666;
+}
+/* line 10, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-details-edit form {
+  font-size: 20px;
+}
+/* line 12, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-details-edit form input {
+  font-size: 20px;
+  border: 2px solid #ccc;
+  margin-bottom: 15px 0;
+  padding: 4px;
+  display: inline-block;
+}
+/* line 22, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-edit-pictures {
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #666;
+  background: #e3f2fd;
+}
+/* line 29, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-edit-pictures
+.gallery-edit-picture {
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #000;
+  min-height: 385px;
+  background: #fff;
+}
+/* line 36, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-edit-pictures
+.gallery-edit-picture img {
+  width: 50%;
+}
+/* line 40, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-edit-pictures
+.gallery-edit-picture .edit-form {
+  float: left;
+  width: 50%;
+  display: block;
+}
+/* line 45, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-edit-pictures
+.gallery-edit-picture .edit-form form label {
+  margin: 2px;
+}
+/* line 49, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-edit-pictures
+.gallery-edit-picture .edit-form form input {
+  font-size: 20px;
+  border: 2px solid #ccc;
+  margin-bottom: 15px;
+  padding: 4px;
+  width: 90%;
+  display: block;
+}
+/* line 58, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-edit-pictures
+.gallery-edit-picture .edit-form form textarea {
+  display: block;
+  width: 90%;
+  height: 8rem;
+  margin-bottom: 15px;
+}
+/* line 65, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-edit-pictures
+.gallery-edit-picture .edit-form form input[type=checkbox] {
+  display: inline;
+  width: auto;
+}
+/* line 70, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.wrapper .gallery-edit-pictures
+.gallery-edit-picture .edit-form form input[type=submit] {
+  border: 2px solid #666;
+}
+
+/* line 78, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.red {
+  background-color: #ef9a9a;
+}
+
+/* line 82, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/edit-gallery.scss */
+.blue {
+  background-color: #81d4fa;
+}
+/* line 1, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+.gal {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+/* line 5, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+.gal h1 {
+  font-size: 2em;
+  font-weight: 800;
+  color: #666;
+}
+/* line 11, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+.gal h4 {
+  font-size: 1.2em;
+}
+/* line 15, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+.gal .title {
+  margin: 25px 0;
+}
+
+/* line 20, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+.gal-grid {
+  max-width: 80em;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+}
+
+/* line 27, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+.gal-grid li {
+  display: block;
+  float: left;
+  padding: 7px;
+  width: 50%;
+  opacity: 0;
+}
+
+/* line 35, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+.gal-grid li.shown,
+.no-js .gal-grid li,
+.no-cssanimations .gal-grid li {
+  opacity: 1;
+}
+
+/* line 41, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+.gal-grid li a,
+.gal-grid li img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+
+/* line 49, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+.gal-grid.move-up li.animate {
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp 0.65s ease forwards;
+  animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 68, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+  .gal-grid li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 533px) {
+  /* line 74, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/gallery-grid.scss */
+  .gal-grid li {
+    width: 100%;
+  }
+}
+/* line 1, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid {
+  position: relative;
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 10, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0.15%;
+  min-width: 200px;
+  width: 32.6%;
+  max-width: 600px;
+  max-height: 200px;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 24, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+  .grid figure {
+    min-width: 49%;
+  }
+}
+@media screen and (max-width: 720px) {
+  /* line 30, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+  .grid figure {
+    min-width: 100%;
+  }
+}
+/* line 35, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+/* line 43, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 52, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+/* line 57, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+/* line 68, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 76, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 800;
+  color: #fff;
+}
+
+/* line 82, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+/* line 86, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+/* line 91, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+  font-weight: 600;
+}
+
+/* line 97, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+figure.grid-hover img {
+  max-width: none;
+  width: -webkit-calc(100% + 50px);
+  width: calc(100% + 50px);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0);
+}
+
+/* line 108, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+figure.grid-hover figcaption {
+  text-align: left;
+}
+
+/* line 112, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+figure.grid-hover figcaption > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  height: 50%;
+}
+
+/* line 121, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+figure.grid-hover h2,
+figure.grid-hover p {
+  -webkit-transform: translate3d(0, 80px, 0);
+  transform: translate3d(0, 80px, 0);
+}
+
+/* line 127, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+figure.grid-hover h2 {
+  color: white;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+/* line 134, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+figure.grid-hover p {
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+}
+
+/* line 141, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+figure.grid-hover:hover img,
+figure.grid-hover:hover h2,
+figure.grid-hover:hover p {
+  opacity: 1;
+}
+
+/* line 147, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+figure.grid-hover:hover img,
+figure.grid-hover:hover h2,
+figure.grid-hover:hover p {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 154, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/grid.scss */
+figure.grid-hover:hover p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}
+/* line 1, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/home.scss */
+body,
+html,
+.cover-photo {
+  height: 100%;
+}
+
+/* line 7, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/home.scss */
+.cover-photo {
+  background-image: url(imgae_path("cover4.jpg")) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1920px;
+}
+
+/* line 15, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/home.scss */
+.cover-photo .logo {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 330px;
+  width: 80%;
+}
+
+/* line 23, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/home.scss */
+.cover-photo .primary-navigation {
+  left: 0;
+  width: 100%;
+}
+
+/* line 28, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/home.scss */
+.v-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 1, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/login.scss */
+.login {
+  margin: 50px auto;
+  width: 400px;
+}
+/* line 5, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/login.scss */
+.login form label {
+  margin: 2px;
+}
+/* line 9, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/login.scss */
+.login form input {
+  font-size: 20px;
+  border: 2px solid #ccc;
+  margin-bottom: 15px;
+  padding: 4px;
+  width: 100%;
+  display: block;
+}
+/* line 18, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/login.scss */
+.login form textarea {
+  display: block;
+  width: 100%;
+  height: 8rem;
+  margin-bottom: 15px;
+}
+/* line 25, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/login.scss */
+.login form input[type=checkbox] {
+  display: inline;
+  width: auto;
+}
+/* line 30, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/login.scss */
+.login form input[type=submit] {
+  margin-top: 15px;
+  width: 50%;
+  background: #fff;
+  border: 2px solid #666;
+}
+/* line 1, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 14, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+
+/* line 19, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* line 23, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.nav-logo {
+  height: 35px;
+  float: left;
+}
+
+/* line 28, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 39, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 49, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.container {
+  max-width: 1920px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 56, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.primary-navigation {
+  bottom: 0;
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+  position: absolute;
+  width: 100%;
+  float: right;
+}
+
+/* line 65, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.primary-navigation.fixed {
+  background: rgba(255, 255, 255, 0.95);
+  bottom: auto;
+  padding: 0px 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+/* line 75, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.primary-navigation .links {
+  float: right;
+  margin-right: 0;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 83, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.primary-navigation .links li {
+  float: left;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin: 10px 0 0 25px;
+}
+
+/* line 92, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.primary-navigation .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 97, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.primary-navigation.fixed .links li a {
+  color: #666;
+}
+
+/* line 101, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.primary-navigation.fixed .links li a:hover,
+.primary-navigation .links li a.active,
+.primary-navigation .links li a:hover {
+  color: #FC5253;
+}
+
+/* line 107, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.fixed {
+  margin: 0 auto;
+  height: 90px;
+}
+
+/* line 112, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+.primary-navigation .hamburger {
+  display: none;
+}
+
+/* line 116, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+#toggle-logo {
+  margin-top: 15px;
+  margin-bottom: -30px;
+}
+
+@media screen and (max-width: 1025px) {
+  /* line 122, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  /* line 128, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .hamburger {
+    display: block;
+    position: absolute;
+    padding: 25px 0;
+    right: 20px;
+    top: 3px;
+    width: 33px;
+  }
+
+  /* line 137, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .hamburger .bar {
+    background: #FC5253;
+    display: block;
+    height: 3px;
+    margin: 6px;
+    position: relative;
+    -webkit-transition: -webkit-transform .4s ,opacity .3s;
+    transition: transform .4s ,opacity .3s;
+    width: 100%;
+  }
+
+  /* line 148, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .hamburger.x .bar-top {
+    top: 7px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .4s;
+    transition: transform .4s;
+  }
+
+  /* line 157, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .hamburger.x .bar-middle {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+  }
+
+  /* line 163, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .hamburger.x .bar-bottom {
+    top: -11px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .4s;
+    transition: transform .4s;
+  }
+
+  /* line 172, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .links {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
+    left: 0;
+    opacity: 0;
+    padding: 25px 0;
+    position: absolute;
+    text-align: center;
+    -webkit-transition: opacity .5s,visibility .1s .5s;
+    transition: opacity .5s,visibility .1s .5s;
+    top: 100%;
+    visibility: hidden;
+    width: 100%;
+    z-index: 5;
+  }
+
+  /* line 188, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .links.show {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+  }
+
+  /* line 195, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .links li {
+    display: block;
+    margin: 15px 0;
+    float: none;
+  }
+
+  /* line 201, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .links li a {
+    color: #33384A;
+  }
+
+  /* line 205, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .links li:after {
+    content: "-------";
+    color: #FC5253;
+    display: block;
+    margin: 15px 0 0 0;
+  }
+
+  /* line 212, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/nav.scss */
+  .primary-navigation .links li:last-child:after {
+    display: none;
+  }
+}
+/* line 1, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.picture {
+  width: 1200px;
+  margin: 40px auto;
+}
+/* line 5, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.picture h1 {
+  font-size: 1.3em;
+  font-weight: 800;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* line 12, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 17, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.new-picture {
+  max-width: 400px;
+  width: 100%;
+  margin: 40px auto;
+}
+/* line 22, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.new-picture h1 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+/* line 29, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.new-picture form label {
+  margin: 2px;
+}
+/* line 33, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.new-picture form input {
+  font-size: 20px;
+  border: 2px solid #ccc;
+  margin-bottom: 15px;
+  padding: 4px;
+  width: 100%;
+  display: block;
+}
+/* line 42, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.new-picture form textarea {
+  display: block;
+  width: 100%;
+  height: 8rem;
+  margin-bottom: 15px;
+}
+/* line 49, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.new-picture form input[type=checkbox] {
+  display: inline;
+  width: auto;
+}
+/* line 54, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/picture.scss */
+.new-picture form input[type=submit] {
+  border: 2px solid #666;
+}
+/* line 1, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/prints.scss */
+.prints-container {
+  margin: 40px auto;
+  max-width: 1530px;
+  display: block;
+}
+/* line 7, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/prints.scss */
+.prints-container figure {
+  max-width: 500px;
+  display: inline-block;
+  padding: 5px;
+}
+/* line 12, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/prints.scss */
+.prints-container figure img {
+  width: 100%;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 7, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 14, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 35, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 39, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 42, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 45, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 48, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 53, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 58, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 59, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 60, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 62, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 63, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+.group:before, .group:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 64, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+.group:after {
+  clear: both;
+}
+
+/* line 65, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/reset.scss */
+.group {
+  zoom: 1;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/application.scss */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* line 22, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/application.scss */
+.space {
+  height: 90px;
+}
+
+/* line 26, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/application.scss */
+.flash_error {
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  background-color: red;
+  text-align: center;
+  font-weight: 800;
+  padding: 5px;
+  color: #fff;
+  opacity: 0.6;
+}
+
+/* line 38, /Users/robbielane/code/robbie_lane_photo/app/assets/stylesheets/application.scss */
+.flash_notice {
+  width: 100%;
+  position: absolute;
+  top: 88px;
+  background-color: blue;
+  text-align: center;
+  font-weight: 800;
+  padding: 5px;
+  color: #fff;
+  opacity: 0.8;
+}
