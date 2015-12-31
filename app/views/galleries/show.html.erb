@@ -5,6 +5,29 @@
     <h1> <%= @gallery.name %></h1>
     <h4> <%= @gallery.location %> </h4>
   </div>
+
+		<nav class="page-nav">
+    <% if @gallery.previous %>
+			<a class="prev" href="<%= gallery_path(@gallery.previous) %>">
+				<span class="icon-wrap"><%= svg_tag 'left-arrow1.svg', class: 'icon' %></span>
+				<div>
+					<h3><%= @gallery.previous.name %></h3>
+          <%= image_tag @gallery.previous.pictures.first.image.url(:h_thumb) %>
+					<!-- <img src="img/22.png" alt="Previous thumb"/> -->
+				</div>
+			</a>
+    <% end %>
+    <% if @gallery.next %>
+			<a class="next" href="<%= gallery_path(@gallery.next) %>">
+				<span class="icon-wrap"><%= svg_tag 'right-arrow1.svg', class: 'icon' %></span>
+				<div>
+					<h3><%= @gallery.next.name %></h3>
+          <%= image_tag @gallery.next.pictures.first.image.url(:h_thumb) %>
+					<!-- <img src="img/21.png" alt="Next thumb"/> -->
+				</div>
+			</a>
+    <% end %>
+		</nav>
   <ul class="gal-grid move-up" id="gal-grid">
 
     <% @gallery.pictures.each do |picture| %>
