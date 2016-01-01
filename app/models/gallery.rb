@@ -4,10 +4,10 @@ class Gallery < ActiveRecord::Base
   default_scope { order('created_at DESC') }
 
   def previous
-    self.class.unscoped.order(:id).where('id < ?', id).first
+    self.class.unscoped.order('id DESC').where('id < ?', id).first
   end
 
   def next
-    self.class.unscoped.order(:id).where('id > ?', id).first
+    self.class.unscoped.order('id ASC').where('id > ?', id).first
   end
 end
