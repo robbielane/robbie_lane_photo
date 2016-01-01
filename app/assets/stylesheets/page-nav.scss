@@ -1,0 +1,133 @@
+nav.page-nav a {
+	position: fixed;
+	top: 50%;
+	display: block;
+	outline: none;
+	text-align: left;
+	z-index: 1000;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+nav.page-nav a.prev {
+	left: 0;
+}
+
+nav.page-nav a.next {
+	right: 0;
+}
+
+nav.page-nav a svg {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.page-nav .icon-wrap {
+	position: relative;
+	z-index: 100;
+	display: block;
+	padding: 20px 10px;
+	border: 0px solid #1565c0;
+	background: #1565c0;
+	-webkit-transition: border-width 0.2s 0.1s;
+	transition: border-width 0.2s 0.1s;
+}
+
+.page-nav svg.icon {
+	fill: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+.page-nav div {
+	position: absolute;
+	top: 50%;
+	padding: 20px;
+	width: 440px;
+	height: 144px;
+	background: #fff;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.page-nav a.prev div {
+	left: 0;
+	padding: 20px 140px 20px 70px;
+	text-align: right;
+	-webkit-transform: translateY(-50%) translateX(-100%) scale(0.75);
+	transform: translateY(-50%) translateX(-100%) scale(0.75);
+}
+
+.page-nav a.next div {
+	right: 0;
+	padding: 20px 70px 20px 140px;
+	-webkit-transform: translateY(-50%) translateX(100%) scale(0.75);
+	transform: translateY(-50%) translateX(100%) scale(0.75);
+}
+
+.page-nav span {
+	display: block;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ddd;
+	color: #cdcdcd;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 0.7em;
+	line-height: 1.2;
+}
+
+.page-nav h3 {
+	margin: 0;
+	padding: 8px 0 10px;
+	color: #818181;
+	font-weight: 300;
+	font-size: 1.325em;
+	line-height: 1.2;
+}
+
+.page-nav div p {
+	margin: 0;
+	color: #b24e44;
+	font-style: italic;
+	font-size: 75%;
+	font-family: "Lucida Bright", Georgia, serif;
+}
+
+.page-nav img {
+	position: absolute;
+	top: 0px;
+  height: 144px;
+}
+
+.page-nav a.prev img {
+	right: 0px;
+}
+
+.page-nav a.next img {
+	left: 0px;
+}
+
+.page-nav a:hover .icon-wrap {
+	border-top-width: 40px;
+	border-bottom-width: 40px;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.page-nav a:hover div {
+	opacity: 1;
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+	-webkit-transform: translateY(-50%) translateX(0) scale(1);
+	transform: translateY(-50%) translateX(0) scale(1);
+}
+
+@media screen and (max-width: 520px) {
+  .page-nav a {
+		-webkit-transform: translateY(-50%) scale(0.6);
+		transform: translateY(-50%) scale(0.6);
+	}
+}

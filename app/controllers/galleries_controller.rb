@@ -16,7 +16,7 @@ class GalleriesController < ApplicationController
       flash[:notice] = "Successfully created #{@gallery.name}"
       redirect_to admin_path
     else
-      flash.now[:error] = "Something went wron :/"
+      flash.now[:error] = "Something went wrong :/"
       render :new
     end
   end
