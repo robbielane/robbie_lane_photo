@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :pictures, except: [:index]
   resources :galleries
   resources :products, except: [:show, :new, :edit]
+  resources :cart_prints, only: [:create]
   get '/prints', to: 'prints#index'
   get '/prints/:id', as: :print, to: 'prints#show'
   get '/login', to: 'sessions#new'
