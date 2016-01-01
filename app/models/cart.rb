@@ -39,4 +39,8 @@ class Cart
     product = Product.find(raw.keys.first)
     product.price * raw.values.first
   end
+
+  def get_total_price
+    pictures.map { |picture, product| line_total(product) }.reduce(:+)
+  end
 end

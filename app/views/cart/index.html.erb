@@ -2,30 +2,13 @@
 <%= render partial: 'shared/nav' %>
 
 <div class="cart-container">
-  <table>
-    <thead>
-      <tr>
-        <th></th>
-        <th>Picture</th>
-        <th>Print</th>
-        <th>Size</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Subtotal</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @cart.pictures.each do |picture, product| %>
-      <tr>
-        <td> <%= image_tag @cart.get_thumb(picture.to_i), class: 'picture-icon' %> </td>
-        <td> <%= @cart.get_picture_name(picture.to_i) %>
-          <td> <%= @cart.get_medium(product.keys.first) %> </td>
-          <td> <%= @cart.get_size(product.keys.first) %> </td>
-          <td> <%= @cart.get_price(product.keys.first) %> </td>
-          <td> <%= product.values.first %> </td>
-          <td> <%= @cart.line_total(product) %> </td>
-        </tr>
-        <% end %>
-      </tbody>
-    </table>
+  <% if @cart.pictures.empty? %>
+    <h1 class='center'> Cart Empty </h1>
+    <%= link_to "View Prints", prints_path, class: 'center' %>
+  <% else %>
+    <%= render partial: 'cart_pictures' %>
+    <div class="cart-total">
+      <%= render partial: 'cart_total' %>
+    </div>
+  <% end %>
 </div>
