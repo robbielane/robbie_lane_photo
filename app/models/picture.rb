@@ -1,6 +1,8 @@
 class Picture < ActiveRecord::Base
   include Rails.application.routes.url_helpers
   belongs_to :gallery
+  has_many :picture_products
+  has_many :products, through: :picture_products
 
   has_attached_file :image, styles: {
     full_size: '1200x800>',
