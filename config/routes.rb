@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root to: 'home#index'
   resources :pictures, except: [:index]
   resources :galleries
+  resources :products, except: [:show, :new, :edit]
+  resources :cart_prints, only: [:create]
+  get '/cart', to: 'cart#index'
   get '/prints', to: 'prints#index'
   get '/prints/:id', as: :print, to: 'prints#show'
   get '/login', to: 'sessions#new'

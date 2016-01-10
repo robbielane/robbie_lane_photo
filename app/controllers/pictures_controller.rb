@@ -25,6 +25,8 @@ class PicturesController < ApplicationController
   def update
     @picture = Picture.find(params[:id])
     if @picture.update(picture_params)
+      @picture.add_prints?
+      binding.pry
       flash[:notice] = "Successfully updated #{@picture.name}"
       redirect_to :back
     else

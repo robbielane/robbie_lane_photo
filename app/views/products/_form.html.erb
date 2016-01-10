@@ -1,0 +1,11 @@
+
+<%= form_for @product do |f| %>
+  <h2>New Product</h2>
+  <%= f.label :medium %>
+  <%= f.text_field :medium %>
+  <%= f.label :size %>
+  <%= f.text_field :size %>
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,31 @@
+<div class="waypoint-nav space"></div>
+<%= render partial: 'shared/nav' %>
+
+
+<div class="products-table">
+  <%= render partial: 'form' %>
+  <table>
+    <thead>
+      <tr>
+        <th>Medium</th>
+        <th>Size</th>
+        <th>Price</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @products.each do |product| %>
+      <tr>
+        <%= form_for product do |f| %>
+          <td> <%= f.text_field :medium %> </td>
+          <td> <%= f.text_field :size %> </td>
+          <td> <%= f.text_field :price %> </td>
+          <td> <%= f.submit 'Update' %> </td>
+        <% end %>
+        <td> <%= link_to 'Delete', product_path(product), method: :delete %> </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+</div>

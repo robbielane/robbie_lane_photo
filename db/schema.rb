@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151228214434) do
+ActiveRecord::Schema.define(version: 20160101022948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,16 @@ ActiveRecord::Schema.define(version: 20151228214434) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "picture_products", force: :cascade do |t|
+    t.integer  "picture_id"
+    t.integer  "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "picture_products", ["picture_id"], name: "index_picture_products_on_picture_id", using: :btree
+  add_index "picture_products", ["product_id"], name: "index_picture_products_on_product_id", using: :btree
 
   create_table "pictures", force: :cascade do |t|
     t.text     "name"
@@ -38,6 +48,14 @@ ActiveRecord::Schema.define(version: 20151228214434) do
 
   add_index "pictures", ["gallery_id"], name: "index_pictures_on_gallery_id", using: :btree
 
+  create_table "products", force: :cascade do |t|
+    t.text     "medium"
+    t.text     "size"
+    t.integer  "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
@@ -47,5 +65,7 @@ ActiveRecord::Schema.define(version: 20151228214434) do
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "picture_products", "pictures"
+  add_foreign_key "picture_products", "products"
   add_foreign_key "pictures", "galleries"
 end

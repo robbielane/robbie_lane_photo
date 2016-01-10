@@ -1,0 +1,44 @@
+.products-table {
+  margin: 0 auto;
+
+  .new_product {
+    padding: 30px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 20px auto;
+    max-width: 1000px;
+    width: 100%;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 800;
+      padding-bottom: 25px;
+    }
+
+    input[type=text] {
+      margin-right: 25px;
+    }
+  }
+
+  table {
+    margin: 30px auto;
+    max-width: 1000px;
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid #ccc;
+      th {
+        text-align: left;
+        font-weight: bold;
+      }
+      td img,
+      td p {
+        vertical-align: middle;
+      }
+
+      th, td {
+        padding: 15px;
+      }
+    }
+  }
+}
