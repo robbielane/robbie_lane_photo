@@ -21,4 +21,7 @@ Rails.application.routes.draw do
       get '/recent', to: 'recent#index'
     end
   end
+
+
+  match '*any' => 'application#options', :via => [:options]
 end
