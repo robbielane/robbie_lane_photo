@@ -1,6 +1,8 @@
 .picture {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 40px auto;
+  padding: 15px;
 
   h1 {
     font-size: 1.3em;
@@ -10,6 +12,7 @@
   }
 }
 .center {
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
