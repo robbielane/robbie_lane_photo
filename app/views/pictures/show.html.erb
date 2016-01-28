@@ -2,5 +2,6 @@
 <%= render partial: 'shared/nav' %>
 <div class="picture">
   <h1><%= @picture.name %></h1>
+  <p class="pic-desc"><%= @picture.description %></p>
   <%= image_tag @picture.image.url(:full_size), class: 'center' %>
 </div>
