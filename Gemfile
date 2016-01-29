@@ -13,6 +13,8 @@ gem 'figaro'
 gem 'bcrypt', '~> 3.1.7'
 gem 'responders'
 gem 'puma'
+gem 'sprockets', '>= 3.0.0'
+gem 'sprockets-es6'
 
 group :development, :test do
   gem 'pry'
