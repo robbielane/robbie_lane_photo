@@ -4,7 +4,11 @@
 <div class="print-container">
   <%= image_tag @print.image.url(:full_size) %>
 </div>
-<%= form_for :product, url: cart_prints_path(print_id: @print.id) do |f| %>
- <%= f.collection_select(:id, Product.all, :id, :name, prompt: true) %>
- <%= f.submit "Add to cart"%>
-<% end %>
+
+<div class="print-form">
+  <%= form_for :product, url: cart_prints_path(print_id: @print.id) do |f| %>
+   <%= f.collection_select(:id, Product.all, :id, :name, prompt: true) %>
+   <%= f.submit "Add to cart"%>
+  <% end %>
+
+</div>

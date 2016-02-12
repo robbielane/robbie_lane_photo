@@ -1,16 +1,28 @@
-.prints-container {
-  margin: 40px auto;
-  max-width: 1530px;
+.print-container {
+  margin: 0 auto;
+  max-width: 1200px;
 
-  display: block;
 
-  figure {
-    max-width: 500px;
-    display: inline-block;
-    padding: 5px;
+  .print-image {
+    width: 100%;
+    margin: 40px auto;
 
-    img {
-      width: 100%;
+
+    display: block;
+
+    figure {
+      max-width: 500px;
+      display: inline-block;
+      padding: 5px;
+
+      img {
+        width: 100%;
+      }
     }
+  }
+
+  .print-form {
+    width: 33%;
+    display: block;
   }
 }
