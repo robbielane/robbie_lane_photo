@@ -2,13 +2,17 @@
 <%= render partial: 'shared/nav' %>
 
 <div class="print-container">
-  <%= image_tag @print.image.url(:full_size) %>
-</div>
+  <div class="print-image">
+    <%= image_tag @print.image.url(:full_size) %>
+  </div>
 
-<div class="print-form">
-  <%= form_for :product, url: cart_prints_path(print_id: @print.id) do |f| %>
-   <%= f.collection_select(:id, Product.all, :id, :name, prompt: true) %>
-   <%= f.submit "Add to cart"%>
-  <% end %>
+  <div class="print-description-form">
+    <h2><%= @print.name %></h2>
+    <p><%= @print.description %></p>
+    <%= form_for :product, url: cart_prints_path(print_id: @print.id) do |f| %>
+     <%= f.collection_select(:id, Product.all, :id, :name, prompt: true) %>
+     <%= f.submit "Add to cart"%>
+    <% end %>
 
+  </div>
 </div>
