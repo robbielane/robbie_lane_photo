@@ -35,7 +35,7 @@
     padding: 0 20px;
 
     h2 {
-      font-size: 22px;
+      font-size: 25px;
       font-weight: 800;
       margin-bottom: 3px;
     }
@@ -59,7 +59,7 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         background-color: #eee;
-        color:#8a97a0;
+        color:#666;
         -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
         box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
         margin-bottom: 30px;
@@ -69,21 +69,22 @@
       input[type="button"] {
         position: relative;
         display: block;
-        padding: 19px 39px 18px 39px;
+        padding: 10px 20px;
+        text-transform: uppercase;
         color: #FFF;
         margin: 0 auto;
-        background: #1abc9c;
+        background: #888;
         font-size: 18px;
         text-align: center;
         font-style: normal;
-        width: 100%;
-        border: 1px solid #16a085;
+        width: 80%;
+        border: 1px solid #333;
         margin-bottom: 10px;
       }
 
       input[type="submit"]:hover,
       input[type="button"]:hover {
-          background: #109177;
+          background: #666;
       }
     }
   }
