@@ -10,7 +10,6 @@
     <h2><%= @print.name %></h2>
     <p><%= @print.description %></p>
     <%= form_for :product, url: cart_prints_path(print_id: @print.id) do |f| %>
-      
       <%= f.collection_select(:id, Product.all, :id, :name, prompt: true) %>
       <%= f.submit "Add to Cart"%>
     <% end %>
