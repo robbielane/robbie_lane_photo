@@ -15,18 +15,23 @@ $(document).ready(function() {
 
   var $links = $('#links');
 
-    $('#toggle-menu').on('click',function(e){
-      e.preventDefault();
+  $('#toggle-menu').on('click',function(e){
+    e.preventDefault();
 
-      $(this).toggleClass('x');
+    $(this).toggleClass('x');
 
-      $links.toggleClass('show');
+    $links.toggleClass('show');
 
-    });
+  });
 
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
-      window.document.location = "/login";
+      if ( !$.swipebox.isOpen ) {
+      	window.document.location = "/login";
+      }
     }
   })
+
+  $('.swipebox').swipebox();
+
 });

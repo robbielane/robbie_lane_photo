@@ -23,7 +23,6 @@
 				<div>
 					<h3><%= @gallery.next.name %></h3>
           <%= image_tag @gallery.next.pictures.first.image.url(:h_thumb) %>
-					<!-- <img src="img/21.png" alt="Next thumb"/> -->
 				</div>
 			</a>
     <% end %>
@@ -31,7 +30,8 @@
   <ul class="gal-grid move-up" id="gal-grid">
 
     <% @gallery.pictures.each do |picture| %>
-      <li><%= link_to image_tag(picture.image.url(:full_size)), picture_path(picture) %></li>
+    <li><%= link_to image_tag(picture.image.url(:thumb)), picture.image.url(:full_size), class: 'swipebox' %></li>
+
     <% end %>
 
   </ul>
