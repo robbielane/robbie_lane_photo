@@ -14,3 +14,7 @@
 
 # Ignore application configuration
 /config/application.yml
+
+#ignore database & other server config stuff
+/config/database.yml
+/config/puma.rb
