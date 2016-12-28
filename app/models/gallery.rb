@@ -10,4 +10,8 @@ class Gallery < ActiveRecord::Base
   def next
     self.class.unscoped.order('id ASC').where('id > ?', id).first
   end
+
+  def cover
+    self.pictures.first.image.url
+  end
 end
