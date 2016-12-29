@@ -14,4 +14,8 @@ class Gallery < ActiveRecord::Base
   def cover
     self.pictures.first.image.url
   end
+
+  def all_pics
+    self.pictures.map { |pic| pic.image.url }
+  end
 end
